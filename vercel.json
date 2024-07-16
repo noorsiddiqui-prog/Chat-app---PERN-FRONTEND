@@ -1,12 +1,4 @@
 {
-  "builds": [
-    {
-      "src": "vite.config.ts",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "build.sh",
-      "use": "@vercel/builders/bash"
-    }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "redirects": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
