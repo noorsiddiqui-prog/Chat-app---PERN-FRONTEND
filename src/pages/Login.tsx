@@ -14,9 +14,9 @@ const Login: React.FC = () => {
 		},
 		validationSchema: Yup.object({
 			username: Yup.string()
-				.required('Username is required'),
+				.required('Username is required*'),
 			password: Yup.string()
-				.required('Password is required'),
+				.required('Password is required*'),
 		}),
 		onSubmit: (values) => {
 			// Handle form submission
